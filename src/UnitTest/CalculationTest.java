@@ -32,8 +32,8 @@ public class CalculationTest {
     }
 
     @Test
-    public void triangelArea()
+    public void triangleArea()
     {
-        assertEquals(2, Calculation.area("triangel", 2, 2), 0.0001);
+        assertEquals(2, Calculation.area("triangle", 2, 2), 0.0001);
     }
 }
