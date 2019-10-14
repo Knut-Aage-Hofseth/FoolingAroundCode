@@ -2,9 +2,10 @@ package Enum;
 
 public class Calculation {
 
-    public static double area (Geometry shape, double ... a)
+    public static double area (String shape, double ... a)
     {
-        return shape.area(a);
+        Geometry form = Geometry.valueOf(shape.toUpperCase());
+        return form.area(a);
     }
 
 

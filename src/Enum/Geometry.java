@@ -31,6 +31,16 @@ public enum Geometry {
         public double area(double ... a) {
             return Math.PI*a[0]*a[0];
         }
+    }, TRIANGEL{
+        @Override
+        public double area(double... a) {
+            return (a[0]*a[1])/2;
+        }
+
+        @Override
+        public double circumference(double... a) {
+            return a[0]+a[1]+a[2];
+        }
     };
 
 
